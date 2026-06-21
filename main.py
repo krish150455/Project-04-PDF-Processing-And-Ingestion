@@ -50,7 +50,7 @@ def extract_pages(reader,source:str):
         dict1["page"]=i
         dict1["text"]=reader.pages[i-1].extract_text()
         dict1["source"]= source
-        dict1["page"]= i + 1
+        dict1["page"]= i
         data.append(dict1)
     return data
 
